@@ -8,17 +8,88 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.1295754026354319,
+            "y": 0.29770992366412213,
+            "uniqueID": 701798,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.38433382137628114,
+            "y": 0.4198473282442748,
+            "uniqueID": 689620,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/951869/701798Circle"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5907759882869692,
+            "y": 0.48854961832061067,
+            "uniqueID": 780493,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/951869/689620Extrude"
+                }
+            ],
+            "selectedColorIndex": "15"
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
             "y": 0.5,
             "uniqueID": 535888,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/951869/780493Color"
+                }
+            ]
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 701798,
+            "ap2ID": 689620
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 689620,
+            "ap2ID": 780493
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 780493,
+            "ap2ID": 535888
+        }
+    ],
     "fileTypeVersion": 1,
     "simplify": false,
     "filetypeVersion": 1,
-    "circleSegmentSize": 2
+    "circleSegmentSize": "0.001"
 }
