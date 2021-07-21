@@ -1,0 +1,24 @@
+{
+    "atomType": "Molecule",
+    "name": "Test pull requests against this",
+    "x": 0,
+    "y": 0,
+    "uniqueID": 951869,
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9853587115666179,
+            "y": 0.5,
+            "uniqueID": 535888,
+            "ioValues": []
+        }
+    ],
+    "allConnectors": [],
+    "fileTypeVersion": 1,
+    "simplify": false,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
+}
